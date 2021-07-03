@@ -81,10 +81,9 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'server',
-        'ENFORCE_SCHEMA': False,
+        'NAME': 'vertalserver',
         'CLIENT': {
-                'host': os.getenv("MONGO_CONNECTION_STRING"),
+            'host': os.getenv("MONGO_CONNECTION_STRING"),
         }
     }
 }
